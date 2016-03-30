@@ -63,6 +63,7 @@ namespace spec
 
 		TEST_METHOD(sortedLinkedListsEqualLength)
 		{
+			Assert::IsTrue(compare(merge2LinkedLists(createList(789), createList(123)), 123789), L"Merge linked lists equal length case failed.", LINE_INFO());
 			Assert::IsTrue(compare(merge2LinkedLists(createList(123), createList(456)), 123456), L"Merge linked lists equal length case failed.", LINE_INFO());
 			Assert::IsTrue(compare(merge2LinkedLists(createList(789), createList(123)), 123789), L"Merge linked lists equal length case failed.", LINE_INFO());
 			Assert::IsTrue(compare(merge2LinkedLists(createList(246), createList(135)), 123456), L"Merge linked lists equal length case failed.", LINE_INFO());
